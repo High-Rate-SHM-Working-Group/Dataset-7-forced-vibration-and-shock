@@ -24,11 +24,9 @@ Devon Goshorn, Joud Satme, and Austin Downey. Dataset-7-forced-vibration-and-sho
 
 #### Bibtex
 
-@Misc{Goshorn2019Dataset7Forced,  
-  author = {Devon Goshorn and Joud Satme and Austin Downey},  
-  month  = oct,  
+@Misc{GoshornDataset7Forced,  
+  author = {Devon Goshorn and Joud Satme and Austin {R.J.} Downey},  
   title  = {Dataset-7-forced-vibration-and-shock},  
-  year   = {2019},  
   groups = {High-Rate-SHM-Working-Group},  
   url    = {https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock},  
 }  
