@@ -1,4 +1,4 @@
-# Dataset 7 Forced Vibration and Shock
+# Dataset-7 Forced Vibration and Shock
 A dataset that looks at PCBs under continuous vibration before undergoing a shock event.
 
 This dataset contains the measured acceleration data for an electronics unit under continuous vibration before undergoing a shock test. Figure 1 presents the experimental test configuration where the package is mounted on a Lansmont Model P30 shock test system designed to generate a continuous forced vibration before, after, and during a shock event <a href="https://www.youtube.com/watch?v=kBaZF9kUQLQ&ab_channel=ARTS-LabattheUniversityofSouthCarolina">here</a> The accelerometer is a PCB Piezotronics 352A92 measured at 1 MS/s.
@@ -26,7 +26,7 @@ Devon Goshorn, Joud Satme, and Austin Downey. Dataset-7-forced-vibration-and-sho
 
 @Misc{GoshornDataset7Forced,  
   author = {Devon Goshorn and Joud Satme and Austin {R.J.} Downey},  
-  title  = {Dataset-7-forced-vibration-and-shock},  
+  title  = {Dataset-7 Forced Vibration and Shock},  
   groups = {High-Rate-SHM-Working-Group},  
   url    = {https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock},  
 }  
