@@ -1,2 +1,7 @@
-# Dataset A
-![dataCapture](https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock/assets/137818573/96273911-c4a6-4fed-9497-f2c95cd530f4)
+# Data
+
+## Testset A
+A PCB mounted on a drop table is excited by a click-wheel exciter, producing combined vibration from the click wheel and shock from the drop event.
+
+## Testset B
+A PCB mounted on an electromagnetic shaker, where a vibration signal with a superimposed shock excitation is applied through the shaker.
