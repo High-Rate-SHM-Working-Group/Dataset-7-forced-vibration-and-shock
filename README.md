@@ -9,7 +9,7 @@ This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 Intern
 
 Cite this as: 
 
-@Misc{GoshornDataset7Forced,  
+@Misc{ARTSLabDataset7Forced,  
   author = {{ARTS}-Lab},  
   howpublished = {GitHub},  
   title  = {Dataset-7 Forced Vibration and Shock},  
