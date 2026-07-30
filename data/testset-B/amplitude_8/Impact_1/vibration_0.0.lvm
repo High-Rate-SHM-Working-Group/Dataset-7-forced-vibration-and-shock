@@ -20,7 +20,7 @@ X_Dimension,Time,Time,Time,Time,Time,Time,
 X0,0.0000000000000000E+0,0.0000000000000000E+0,0.0000000000000000E+0,0.0000000000000000E+0,0.0000000000000000E+0,0.0000000000000000E+0,
 Delta_X,1.000000,0.000606,0.000606,0.000586,0.000586,0.000586,
 ***End_of_Header***,,,,,,,
-X_Value,time,excitation_vibration,excitation_shock,excitation_composite,accelerometer_base,accelerometer_board,Comment
+,time,excitation_vibration,excitation_shock,excitation_composite,accelerometer_base,accelerometer_board
 ,0.000000,0.000000,0.000000,0.000566,0.060282,-0.026825
 ,0.000605,0.000000,0.000000,0.000369,0.060986,-0.008544
 ,0.001210,0.000000,0.000000,0.000129,0.061532,-0.008939

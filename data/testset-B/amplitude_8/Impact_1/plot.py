@@ -12,7 +12,7 @@ plt.rcParams.update({'mathtext.fontset': 'custom'})
 # ------------------------------------------------------------------
 
 # ---------- Path to the .lvm file ----------
-lvm_path = 'run_4.lvm'      # Change this for each file
+lvm_path = 'vibration_0.0.lvm'      # Change this for each file
 # -------------------------------------------
 
 
