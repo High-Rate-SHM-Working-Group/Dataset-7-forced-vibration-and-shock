@@ -14,7 +14,7 @@ plt.rcParams.update({'mathtext.fontset': 'custom'})
 # ------------------------------------------------------------------
 # Path to the .lvm file
 # ------------------------------------------------------------------
-lvm_path = 'vibration.lvm'
+lvm_path = 'vibration_0.5.lvm'
 
 
 def load_lvm(path):
