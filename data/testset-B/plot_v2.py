@@ -134,12 +134,6 @@ print(f'Time range: {time[0]:.6f} to {time[-1]:.6f} s')
 # ------------------------------------------------------------------
 # Plot
 # ------------------------------------------------------------------
-fig, axes = plt.subplots(
-    5,
-    1,
-    figsize=(6.5, 6),
-    sharex=True
-)
 
 signals = [
     (vib,   r'excitation\_vibration'),
@@ -149,7 +143,45 @@ signals = [
     (board, r'accelerometer\_board')
 ]
 
-for ax, (sig, ylabel) in zip(axes, signals):
+# --------------------------------------------------------------
+# Edit plot settings here
+# --------------------------------------------------------------
+plot_settings = [
+    {
+        "xlim": (0, 7.8),
+        "ylim": (-0.45, 0.45),
+        "xticks": np.arange(0, 8, 1),
+        "yticks": np.arange(-0.4, 0.5, 0.2),
+    },
+    {
+        "xlim": (0, 7.8),
+        "ylim": (-0.10, 1.10),
+        "xticks": np.arange(0, 8, 1),
+        "yticks": np.arange(0, 1.1, 0.2),
+    },
+    {
+        "xlim": (0, 7.8),
+        "ylim": (-0.50, 1.20),
+        "xticks": np.arange(0, 8, 1),
+        "yticks": np.arange(-0.4, 1.3, 0.4),
+    },
+    {
+        "xlim": (0, 7.8),
+        "ylim": (-1.20, 1.20),
+        "xticks": np.arange(0, 8, 1),
+        "yticks": np.arange(-1.0, 1.1, 0.5),
+    },
+    {
+        "xlim": (0, 7.8),
+        "ylim": (-1.20, 1.20),
+        "xticks": np.arange(0, 8, 1),
+        "yticks": np.arange(-1.0, 1.1, 0.5),
+    }
+]
+
+for (sig, ylabel), ps in zip(signals, plot_settings):
+
+    fig, ax = plt.subplots(figsize=(4, 2.0))
 
     ax.plot(time, sig, linewidth=0.8)
 
@@ -157,23 +189,20 @@ for ax, (sig, ylabel) in zip(axes, signals):
 
     ax.grid(True, which='both', linestyle=':', alpha=0.6)
 
-    ax.tick_params(axis='x', which='both', labelbottom=True)
+    ax.set_xlim(ps["xlim"])
+    ax.set_ylim(ps["ylim"])
 
-    ax.set_xlim(0, 7.8)
+    ax.set_xticks(ps["xticks"])
+    ax.set_yticks(ps["yticks"])
 
-    ax.set_xticks(np.arange(0, 8, 1))
+    ax.xaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f'))
+    ax.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.2f'))
 
-    ax.xaxis.set_major_formatter(
-        mticker.FormatStrFormatter('%.0f')
-    )
+    ax.tick_params(axis='both', which='both', direction='out')
 
     ax.set_xlabel(r'time (s)')
 
-fig.suptitle(
-    r'All Channels vs. Time',
-    y=0.995
-)
+    ax.set_title(ylabel, pad=8)
 
-fig.tight_layout(rect=[0, 0.03, 1, 0.98])
-
-plt.show()
+    fig.tight_layout()
+    plt.show()
